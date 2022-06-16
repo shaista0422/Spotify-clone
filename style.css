@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Ubuntu&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 60px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin: 23px auto;
+    padding: 10px;
+    width: 70%;
+    border-radius: 12px;
+    background-image: url('imgs/song.png');
+    background-repeat: no-repeat;
+
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons i {
+    padding: 0px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    width: 85%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 85px;
+    margin: 0 23px;
+}
+
+.timeStamp {
+    margin: 0 23px;
+    display: flex;
+    text-align: center;
+}
+
+.timeStamp i {
+    padding-left: 13px;
+    cursor: pointer;
+}
+
+.timeStamp :not(i) {
+    padding-top: 12px;
+}
+
+.songInfo {
+    position: absolute;
+    color: white;
+    left: 10vw;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    text-align: center;
+}
+
+.songInfo p {
+    padding-top: 56px;
+}
+
+.songInfo img {
+    opacity: 0;
+    padding-top: 40px;
+    transition: opacity 0.4s ease-in;
+}
